@@ -1033,7 +1033,7 @@ bool ScreenRecoveryUI::Init(const std::string& locale) {
   back_icon_sel_ = LoadBitmap("ic_back_sel");
   if (android::base::GetBoolProperty("ro.boot.dynamic_partitions", false) ||
       android::base::GetBoolProperty("ro.fastbootd.available", false)) {
-    candy_logo_ = LoadBitmap("logo_image_switch");
+    candy_logo_ = LoadBitmap("logo_image");
     fastbootd_logo_ = LoadBitmap("fastbootd");
   } else {
     candy_logo_ = LoadBitmap("logo_image");
